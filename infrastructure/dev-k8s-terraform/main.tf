@@ -170,7 +170,7 @@ resource "aws_instance" "kube-master" {
     }
 }
 
-resource "aws_instance" "worker-1" {
+resource "aws_instance" "worker-01" {
     ami = "ami-013f17f36f8b1fefb"
     instance_type = "t3a.medium"
     iam_instance_profile = module.iam.worker_profile_name
@@ -188,7 +188,7 @@ resource "aws_instance" "worker-1" {
     }
 }
 
-resource "aws_instance" "worker-2" {
+resource "aws_instance" "worker-02" {
     ami = "ami-013f17f36f8b1fefb"
     instance_type = "t3a.medium"
     iam_instance_profile = module.iam.worker_profile_name

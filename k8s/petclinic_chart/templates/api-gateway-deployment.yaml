@@ -37,7 +37,7 @@ spec:
           ports:
             - containerPort: 8080
           resources: {}
-      
+
       initContainers:
       - name: init-discovery-server
         image: busybox
